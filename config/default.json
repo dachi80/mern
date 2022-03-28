@@ -1,0 +1,8 @@
+{
+  "port": 5000,
+  "jwtSecret": "mern secret key",
+  "mongoUri": "mongodb+srv://mongoAdmin:M00dle@cluster0.slzfr.mongodb.net/app?retryWrites=true&w=majority"
+}
+
+
+/*jwtSecret-ში იწერება ნებისმიერი საიდუმლო ფრაზა*/
