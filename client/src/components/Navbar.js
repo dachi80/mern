@@ -8,16 +8,14 @@ export const Navbar = () => {
   const logautHandler = (event) => {
     event.preventDefault()
     auth.logout()
-    navigate.push('/')
+    navigate('/')
   }
 
   return (
     <nav>
-      <div class="nav-wrapper">
-        <a href="/" class="brand-logo">
-          ლინკების შემოკლება
-        </a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <div className="nav-wrapper blue darken-1" style={{ padding: '0 4rem' }}>
+        <span className="brand-logo">ლინკების შემოკლება</span>
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
             <NavLink to="/create">დამატება</NavLink>
           </li>
