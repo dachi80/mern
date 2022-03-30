@@ -35,6 +35,13 @@ export const AuthPage = () => {
     } catch (e) {}
   }
 
+  const keyPressHendler = (e) => {
+    //it triggers by pressing the enter key
+    if (e.which === 13 || e.keyCode === 13) {
+      loginHandler()
+    }
+  }
+
   return (
     <div className="row">
       <div className="col s6 offset-s3 center">
@@ -58,6 +65,7 @@ export const AuthPage = () => {
                   type="password"
                   name="password"
                   onChange={changeHandler}
+                  onKeyPress={keyPressHendler}
                 />
                 <label htmlFor="password">პაროლი</label>
               </div>
