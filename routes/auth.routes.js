@@ -74,7 +74,7 @@ router.post(
       }
       const token = jwt.sign(
         {
-          userID:
+          userId:
             user.id /*აქვე შეიძლება მომხმარებლის სხვა მინაცემების გადაცემაც*/,
         },
         config.get('jwtSecret'),

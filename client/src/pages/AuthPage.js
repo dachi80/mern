@@ -60,6 +60,7 @@ export const AuthPage = () => {
                   id="email"
                   type="text"
                   name="email"
+                  value={form.email}
                   onChange={changeHandler}
                 />
                 <label htmlFor="email">ელ. ფოსტა</label>
@@ -70,6 +71,7 @@ export const AuthPage = () => {
                   id="password"
                   type="password"
                   name="password"
+                  value={form.password}
                   onChange={changeHandler}
                   onKeyPress={keyPressHendler}
                 />
